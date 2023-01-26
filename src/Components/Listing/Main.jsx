@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Tooltip as ReactTooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 import info from "../../assets/images/listing/info-circle.svg";
 import SortImg from "../../assets/images/listing/sort.svg";
 import times from "../../assets/images/listing/times.svg";
@@ -77,7 +79,13 @@ export default function Main() {
                 <h2 className="text-base sm:text-[21px] font-medium text-brand-dark">
                   Best
                 </h2>
-                <img src={info} alt="info" />
+                <ReactTooltip
+                  anchorId="app-title"
+                  place="top"
+                  className="!w-[360px] max-[400px]:max-w-full"
+                  content="We think you'll like these flights based on their duration, price, number of stops and carrier type."
+                />
+                <img id="app-title" src={info} alt="info" />
               </div>
               <ul className="flex gap-2 items-center">
                 <li className="text-xs sm:text-base text-brand-gray-700">
@@ -110,7 +118,7 @@ export default function Main() {
             </a>
           </div>
         </div>
-        <div className="w-full border-t shrink-0 md:w-[160px] xl:w-[186px] flex justify-center items-center relative ">
+        <div className="w-full border-t lg:border-t-0 shrink-0 md:w-[160px] xl:w-[186px] flex justify-center items-center relative ">
           <button
             type="button"
             onClick={() => setSort((state) => !state)}

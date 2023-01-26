@@ -10,7 +10,7 @@ export default function Filter() {
   let [popup, setPopup] = useState(false);
 
   return (
-    <section className="md:px-4 border-t pb-4 md:pb-10 md:pt-20 border-brand-gray-light">
+    <section className="md:px-4 border-t pb-4 md:pb-10 md:pt-20 border-brand-gray-light relative z-10">
       <div className="max-w-screen-3xl mx-auto">
         <div className="w-full z-20 md:rounded-2xl  px-4 py-8 sm:py-14 sm:px-12 bg-white rounded-bl-lg rounded-br-lg lg:rounded-tr-lg">
           <div className="rounded-md border border-brand-red-50 bg-brand-red-25 px-4 sm:px-6 py-4 mb-6 sm:mb-8">
@@ -100,7 +100,7 @@ export default function Filter() {
                   <input
                     type="text"
                     placeholder="From"
-                    className="w-full border-0 border-b  py-1.5 focus:ring-0 border-b-black focus:outline-none font-bold text-lg 2xl:text-2xl"
+                    className="w-full border-0  py-1.5 border-b focus:ring-0 border-b-brand-gray-light focus:outline-none font-normal text-lg 2xl:text-2xl placeholder:text-brand-gray-500"
                     value="Anywhere"
                   />
                   <img src={LeftRight} className="" alt="left-right" />

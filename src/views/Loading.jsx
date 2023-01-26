@@ -1,12 +1,11 @@
+import { Player } from "@lottiefiles/react-lottie-player";
 import React, { useEffect, useState } from "react";
 import loadingBg from "../assets/images/listing/loading-bg.png";
-import Paperplane from "../assets/images/listing/Paperplane.png";
 import LayoutTwo from "../Components/Layouts/LayoutTwo";
 import Ads from "../Components/Listing/Ads";
 import Filter from "../Components/Listing/Filter";
 import Main from "../Components/Listing/Main";
 import Sidebar from "../Components/Listing/Sidebar";
-
 function Loading() {
   let [open, setOpen] = useState(false);
   const openFilter = () => {
@@ -68,12 +67,21 @@ function Loading() {
             </div>
           </div>
         </section>
-        <div className="fixed bg-brand-dark z-40 inset-0 bg-opacity-80 ">
-          <div className="max-w-[960px] mx-auto pt-40 space-y-12 max-h-full overflow-y-auto px-6 pb-5">
+        <div className="fixed bg-[#1d1e26] z-40 inset-0 ">
+          <div className="max-w-[960px] mx-auto pt-32 space-y-8 max-h-full hide-scroll overflow-y-auto px-6 pb-5">
             <div className="flex justify-center">
-              <div className="space-y-3">
-                <img src={Paperplane} alt="loading image" />
-                <p className="text-center text-white -mt-10">Loading..</p>
+              <div className="relative">
+                <Player
+                  src="https://assets9.lottiefiles.com/packages/lf20_wleeph0w.json"
+                  speed={1}
+                  className="w-[200px] h-[200px] "
+                  loop
+                  controls
+                  autoplay
+                />
+                <p className="text-center text-white w-[200px] absolute top-40 left-1/2 -translate-x-1/2">
+                  Loading you results...
+                </p>
               </div>
             </div>
             <div className="w-full rounded-2xl overflow-hidden flex-col md:flex-row bg-brand-red flex items-center">

@@ -9,6 +9,7 @@ import iconThree from "../../assets/images/listing/icon-3.svg";
 import iconFour from "../../assets/images/listing/icon-4.svg";
 import iconFive from "../../assets/images/listing/icon-5.svg";
 import iconSix from "../../assets/images/listing/icon-6.svg";
+import iconSeven from "../../assets/images/listing/icon-7.svg";
 import info from "../../assets/images/listing/info-circle.svg";
 import listImgOne from "../../assets/images/listing/list-img-1.png";
 import paper from "../../assets/images/listing/paper-diploma.svg";
@@ -167,32 +168,143 @@ export default function Details({ border }) {
                       Main Cabin
                     </li>
                   </ul>
-                  <ul className="flex flex-wrap gap-2 justify-end sm:justify-start">
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconOne} alt="iconone" />
-                      <span>2</span>
-                    </li>
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconTwo} alt="iconTwo" />
-                      <span>3</span>
-                    </li>
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconThree} alt="iconThree" />
-                      <span>3</span>
-                    </li>
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconFour} alt="iconFour" />
-                      <span>3</span>
-                    </li>
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconFive} alt="iconFive" />
-                      <span>3</span>
-                    </li>
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconSix} alt="iconSix" />
-                      <span>3</span>
-                    </li>
-                  </ul>
+                  <div className="group relative">
+                    <ul className="flex flex-wrap gap-2 justify-end sm:justify-start">
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconOne} alt="iconone" />
+                        <span>2</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconTwo} alt="iconTwo" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconThree} alt="iconThree" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconFour} alt="iconFour" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconFive} alt="iconFive" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconSix} alt="iconSix" />
+                        <span>3</span>
+                      </li>
+                    </ul>
+                    <div className="group-hover:translate-y-0 top-0 translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-5 shadow-4xl">
+                      <h3 className="text-base font-medium text-brand-dark pb-1 ">
+                        Price Breakdown
+                      </h3>
+                      <ul className="grid gap-1.5 mt-2 pb-3">
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Ticket Price
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              $4,082
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Checked bag (2)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Carry-on bag (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                          <p className="text-xs text-brand-blue-dark text-opacity-75">
+                            Up to 50lbs per bag, and 62in total
+                          </p>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                1 Meal (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Seats (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Outlets
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Movie Library
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div className="flex justify-between items-center pt-2 border-t">
+                        <h3 className="font-medium text-brand-blue-dark ">
+                          Total
+                        </h3>
+                        <p className=" text-brand-blue-dark font-medium">
+                          $4,082
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -319,32 +431,690 @@ export default function Details({ border }) {
                       Main Cabin
                     </li>
                   </ul>
-                  <ul className="flex flex-wrap gap-2 justify-end sm:justify-start">
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconOne} alt="iconone" />
-                      <span>2</span>
+                  <div className="group relative">
+                    <ul className="flex flex-wrap gap-2 justify-end sm:justify-start">
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconOne} alt="iconone" />
+                        <span>2</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconTwo} alt="iconTwo" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconThree} alt="iconThree" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconFour} alt="iconFour" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconFive} alt="iconFive" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconSix} alt="iconSix" />
+                        <span>3</span>
+                      </li>
+                    </ul>
+                    <div className="group-hover:translate-y-0 top-0 translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-5 shadow-4xl">
+                      <h3 className="text-base font-medium text-brand-dark pb-1 ">
+                        Price Breakdown
+                      </h3>
+                      <ul className="grid gap-1.5 mt-2 pb-3">
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Ticket Price
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              $4,082
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Checked bag (2)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Carry-on bag (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                          <p className="text-xs text-brand-blue-dark text-opacity-75">
+                            Up to 50lbs per bag, and 62in total
+                          </p>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                1 Meal (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Seats (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Outlets
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Movie Library
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div className="flex justify-between items-center pt-2 border-t">
+                        <h3 className="font-medium text-brand-blue-dark ">
+                          Total
+                        </h3>
+                        <p className=" text-brand-blue-dark font-medium">
+                          $4,082
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="space-y-4 py-10">
+          <div className="space-y-2">
+            <h2 className="text-2xl font-medium text-brand-dark">Return</h2>
+            <div className="flex divide-x items-center">
+              <div className="flex gap-1 pr-2 items-center">
+                <p className="uppercase text-brand-dark">NYC</p>
+                <img src={plane} alt="plane" />
+                <p className="uppercase text-brand-dark">DEL</p>
+              </div>
+              <p className="pl-2 text-brand-dark text-opacity-75">17h 10m</p>
+            </div>
+          </div>
+          <div className="flex gap-14 flex-col">
+            <div className="flex justify-between">
+              <div className="w-[580px] max-w-full">
+                <div class="flow-root">
+                  <ul role="list" class="-mb-8">
+                    <li>
+                      <div class="relative pb-5 sm:pb-8">
+                        <span
+                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          aria-hidden="true"
+                        ></span>
+                        <div class="relative flex items-start space-x-2 sm:space-x-3">
+                          <div class="relative pb-4 bg-white">
+                            <img
+                              className="w-[36px] h-[36px] sm:w-auto sm:h0auto"
+                              src={listImgOne}
+                              alt="list-img-one"
+                            />
+                          </div>
+                          <div class="min-w-0 flex-1 space-y-2">
+                            <div className="flex flex-wrap xl:flex-nowrap items-center  gap-1.5 xl:gap-5">
+                              <p className="text-brand-dark text-opacity-75 xl:w-auto w-full text-base">
+                                <strong className="text-brand-blue-100 font-medium sm:font-semibold">
+                                  12:25 pm
+                                </strong>
+                                <span className="pl-2 text-sm sm:text-base">
+                                  Mar. 01 (Wed)
+                                </span>
+                              </p>
+                              <div className="flex gap-2 sm:gap-5">
+                                <img
+                                  src={arrowRight}
+                                  className=""
+                                  alt="arrow-right"
+                                />
+                                <div className="flex flex-wrap md:flex-nowrap items-center gap-2">
+                                  <p className="text-brand-dark text-opacity-75 text-sm sm:text-base">
+                                    <strong className="text-brand-blue-100 font-medium sm:font-semibold">
+                                      1:10 am
+                                    </strong>
+                                    <span className="pl-2  text-sm sm:text-base">
+                                      Mar. 02 (Thu)
+                                    </span>
+                                  </p>
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                className="px-3 rounded-md py-1.5 text-sm text-brand-blue-100 bg-brand-dark bg-opacity-5"
+                              >
+                                Next day
+                              </button>
+                            </div>
+                            <ul className="flex divide-x items-center ">
+                              <li className="pr-3 text-brand-dark text-sm sm:text-base font-medium">
+                                8h 15m
+                              </li>
+                              <li className="pl-3 text-brand-dark text-sm sm:text-base font-medium">
+                                Flight 9574
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </li>
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconTwo} alt="iconTwo" />
-                      <span>3</span>
+                    <li>
+                      <div class="relative pb-5 sm:pb-8">
+                        <span
+                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          aria-hidden="true"
+                        ></span>
+                        <div class="relative flex items-start space-x-3">
+                          <div>
+                            <div class="relative px-1">
+                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                                <img src={planeDown} alt="plane" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="min-w-0 flex-1 space-y-2">
+                            <p className="text-sm sm:text-base text-brand-dark sm:leading-none">
+                              Spirit Airlines
+                            </p>
+                            <p className="text-sm sm:text-base text-brand-dark sm:leading-none">
+                              John F. Kennedy International Airport
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </li>
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconThree} alt="iconThree" />
-                      <span>3</span>
-                    </li>
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconFour} alt="iconFour" />
-                      <span>3</span>
-                    </li>
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconFive} alt="iconFive" />
-                      <span>3</span>
-                    </li>
-                    <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                      <img src={iconSix} alt="iconSix" />
-                      <span>3</span>
+                    <li>
+                      <div class="relative pb-5 sm:pb-8">
+                        <span
+                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          aria-hidden="true"
+                        ></span>
+                        <div class="relative flex items-start space-x-3">
+                          <div>
+                            <div class="relative px-1">
+                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                                <div className="w-3 h-3 rounded-full bg-brand-blue-25"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="min-w-0 flex-1 py-0">
+                            <div className="w-full rounded-md flex-col md:flex-row border border-brand-blue-25 px-4 py-2 bg-brand-gray-10 flex justify-between md:items-center">
+                              <p className="text-brand-blue-100 text-sm">
+                                Stop at AMS
+                              </p>
+                              <p className="text-sm font-medium text-brand-blue-100">
+                                1h 55m layover in Amsterdam
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                   </ul>
+                </div>
+              </div>
+              <div className="shrink-0 w-[116px] sm:w-[230px] sm:px-5 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <ul className="divide-x flex items-center ">
+                    <li className="text-brand-dark pr-2 text-xs sm:text-base">
+                      Coach
+                    </li>
+                    <li className="text-brand-dark pl-2 text-xs sm:text-base">
+                      Main Cabin
+                    </li>
+                  </ul>
+                  <div className="group relative">
+                    <ul className="flex flex-wrap gap-2 justify-end sm:justify-start">
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconOne} alt="iconone" />
+                        <span>2</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconTwo} alt="iconTwo" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconThree} alt="iconThree" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconFour} alt="iconFour" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconFive} alt="iconFive" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconSix} alt="iconSix" />
+                        <span>3</span>
+                      </li>
+                    </ul>
+                    <div className="group-hover:translate-y-0 top-0 translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-5 shadow-4xl">
+                      <h3 className="text-base font-medium text-brand-dark pb-1 ">
+                        Price Breakdown
+                      </h3>
+                      <ul className="grid gap-1.5 mt-2 pb-3">
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Ticket Price
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              $4,082
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Checked bag (2)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Carry-on bag (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                          <p className="text-xs text-brand-blue-dark text-opacity-75">
+                            Up to 50lbs per bag, and 62in total
+                          </p>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                1 Meal (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Seats (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Outlets
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Movie Library
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div className="flex justify-between items-center pt-2 border-t">
+                        <h3 className="font-medium text-brand-blue-dark ">
+                          Total
+                        </h3>
+                        <p className=" text-brand-blue-dark font-medium">
+                          $4,082
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-between relative">
+              <div className="w-[580px] max-w-full">
+                <div class="flow-root">
+                  <ul role="list" class="-mb-8">
+                    <li>
+                      <div class="relative pb-5 sm:pb-8">
+                        <span
+                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          aria-hidden="true"
+                        ></span>
+                        <div class="relative flex items-start space-x-2 sm:space-x-3">
+                          <div class="relative pb-4 bg-white">
+                            <img
+                              className="w-[36px] h-[36px] sm:w-auto sm:h0auto"
+                              src={listImgOne}
+                              alt="list-img-one"
+                            />
+                          </div>
+                          <div class="min-w-0 flex-1 space-y-2">
+                            <div className="flex flex-wrap xl:flex-nowrap items-center  gap-1.5 xl:gap-5">
+                              <p className="text-brand-dark text-opacity-75 xl:w-auto w-full text-base">
+                                <strong className="text-brand-blue-100 font-medium sm:font-semibold">
+                                  9:30 pm
+                                </strong>
+                                <span className="pl-2 text-sm sm:text-base">
+                                  Feb. 15 (Wed)
+                                </span>
+                              </p>
+                              <div className="flex gap-2 sm:gap-5">
+                                <img
+                                  src={arrowRight}
+                                  className=""
+                                  alt="arrow-right"
+                                />
+                                <div className="flex flex-wrap md:flex-nowrap items-center gap-2">
+                                  <p className="text-brand-dark text-opacity-75 text-sm sm:text-base">
+                                    <strong className="text-brand-blue-100 font-medium sm:font-semibold">
+                                      10:30 am
+                                    </strong>
+                                    <span className="pl-2  text-sm sm:text-base">
+                                      Feb. 16 (Thu)
+                                    </span>
+                                  </p>
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                className="px-3 rounded-md py-1.5 text-sm text-brand-blue-100 bg-brand-dark bg-opacity-5"
+                              >
+                                Next day
+                              </button>
+                            </div>
+                            <ul className="flex divide-x items-center ">
+                              <li className="pr-3 text-brand-dark text-sm sm:text-base font-medium">
+                                7h
+                              </li>
+                              <li className="pl-3 text-brand-dark text-sm sm:text-base font-medium">
+                                Flight 9392
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="relative pb-5 sm:pb-8">
+                        <span
+                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          aria-hidden="true"
+                        ></span>
+                        <div class="relative flex items-start space-x-3">
+                          <div>
+                            <div class="relative px-1">
+                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                                <img src={planeDown} alt="plane" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="min-w-0 flex-1 space-y-2">
+                            <p className="text-sm sm:text-base text-brand-dark sm:leading-none">
+                              Spirit Airlines
+                            </p>
+                            <p className="text-sm sm:text-base text-brand-dark sm:leading-none">
+                              John F. Kennedy International Airport
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="relative pb-5 sm:pb-8">
+                        <div class="relative flex items-start space-x-3">
+                          <div>
+                            <div class="relative px-1">
+                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                                <div className="w-3 h-3 rounded-full bg-brand-blue-25"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="min-w-0 flex-1 py-0">
+                            <div className="w-full rounded-md flex-col md:flex-row border border-brand-dark px-4 py-2 bg-brand-dark flex justify-between md:items-center">
+                              <p className="text-white text-sm">Stop at AMS</p>
+                              <p className="text-sm font-medium text-white">
+                                1h 55m layover in Amsterdam
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="shrink-0 w-[116px] sm:w-[230px] sm:px-5 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <ul className="divide-x flex items-center ">
+                    <li className="text-brand-dark pr-2 text-xs sm:text-base">
+                      Coach
+                    </li>
+                    <li className="text-brand-dark pl-2 text-xs sm:text-base">
+                      Main Cabin
+                    </li>
+                  </ul>
+                  <div className="group relative">
+                    <ul className="flex flex-wrap gap-2 justify-end sm:justify-start">
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconOne} alt="iconone" />
+                        <span>2</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconTwo} alt="iconTwo" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconThree} alt="iconThree" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconFour} alt="iconFour" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconFive} alt="iconFive" />
+                        <span>3</span>
+                      </li>
+                      <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
+                        <img src={iconSix} alt="iconSix" />
+                        <span>3</span>
+                      </li>
+                    </ul>
+                    <div className="group-hover:translate-y-0 top-0 translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-5 shadow-4xl">
+                      <h3 className="text-base font-medium text-brand-dark pb-1 ">
+                        Price Breakdown
+                      </h3>
+                      <ul className="grid gap-1.5 mt-2 pb-3">
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Ticket Price
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              $4,082
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Checked bag (2)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Carry-on bag (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                          <p className="text-xs text-brand-blue-dark text-opacity-75">
+                            Up to 50lbs per bag, and 62in total
+                          </p>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                1 Meal (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Seats (3)
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Outlets
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                        <li className="space-y-2">
+                          <div className="flex gap-2 items-center justify-between text-sm">
+                            <div className="flex gap-2 items-center">
+                              <img src={iconSeven} alt="icon" />
+                              <span className="text-brand-blue-dark">
+                                Movie Library
+                              </span>
+                            </div>
+                            <p className="text-brand-blue-dark text-opacity-75">
+                              Included
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div className="flex justify-between items-center pt-2 border-t">
+                        <h3 className="font-medium text-brand-blue-dark ">
+                          Total
+                        </h3>
+                        <p className=" text-brand-blue-dark font-medium">
+                          $4,082
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

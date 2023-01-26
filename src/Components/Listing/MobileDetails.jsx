@@ -3,12 +3,6 @@ import { Link } from "react-router-dom";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import remove from "../../assets/images/listing/e-remove.svg";
-import iconOne from "../../assets/images/listing/icon-1.svg";
-import iconTwo from "../../assets/images/listing/icon-2.svg";
-import iconThree from "../../assets/images/listing/icon-3.svg";
-import iconFour from "../../assets/images/listing/icon-4.svg";
-import iconFive from "../../assets/images/listing/icon-5.svg";
-import iconSix from "../../assets/images/listing/icon-6.svg";
 import listImgTwo from "../../assets/images/listing/list-img-2.png";
 import Love from "../Svg/Love";
 import Details from "./Details";
@@ -137,32 +131,6 @@ export default function MobileDetails() {
               </ul>
             </div>
             <div className="md:pl-4 xl:pl-8 xl:pr-4 py-8 space-y-10 flex justify-center items-center max-[400px]:w-[120px] w-[170px] sm:w-auto md:block">
-              <ul className="hidden md:flex flex-wrap gap-2">
-                <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                  <img src={iconOne} alt="iconone" />
-                  <span>2</span>
-                </li>
-                <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                  <img src={iconTwo} alt="iconTwo" />
-                  <span>3</span>
-                </li>
-                <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                  <img src={iconThree} alt="iconThree" />
-                  <span>3</span>
-                </li>
-                <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                  <img src={iconFour} alt="iconFour" />
-                  <span>3</span>
-                </li>
-                <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                  <img src={iconFive} alt="iconFive" />
-                  <span>3</span>
-                </li>
-                <li className="px-1.5 sm:px-2 rounded-md py-0.5 sm:py-1 flex gap-1 sm:gap-2 text-[10px] sm:text-xs font-medium text-brand-blue-100 border border-brand-gray-800">
-                  <img src={iconSix} alt="iconSix" />
-                  <span>3</span>
-                </li>
-              </ul>
               <div className="space-y-3">
                 <h2 className="text-brand-blue-100 text-xl md:text-[32px] leading-none font-bold">
                   $897

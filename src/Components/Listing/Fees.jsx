@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import icon from "../../assets/images/listing/icon-6.svg";
+import iconTen from "../../assets/images/listing/icon-10.svg";
+import iconEight from "../../assets/images/listing/icon-8.svg";
+import iconNine from "../../assets/images/listing/icon-9.svg";
 export default function Fees() {
   const [selectedOption, setSelectedOption] = useState("option1");
 
@@ -40,30 +42,38 @@ export default function Fees() {
             </span>
           </span>
         </label>
-        <div className="group-hover:translate-y-0 group-[.active]:!opacity-0 group-[.active]:!invisible  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute top-full bg-white z-30 w-[250px] rounded-lg p-4 shadow-4xl">
+        <div className="group-hover:translate-y-0 group-[.active]:!opacity-0 group-[.active]:!invisible  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute top-full bg-white z-30 w-[250px] sm:w-[330px] rounded-lg p-4 shadow-4xl">
           <h3 className="text-base font-medium text-brand-dark pb-1 border-b">
             Refundable Main Cabin
           </h3>
           <ul className="grid gap-1 mt-2">
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconEight} alt="icon" className="w-4" />
               <span>Ticket Price</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconNine} alt="icon" className="w-4" />
+              <span>Upgrade Eligibility</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Changeable Ticket, add'l fees apply</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Carry On Hand Baggage</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>First Checked Bag</span>
+            </li>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Mileage Accrual</span>
+            </li>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Advance Seat Selection, add'l fees apply</span>
             </li>
           </ul>
         </div>
@@ -99,30 +109,38 @@ export default function Fees() {
             </span>
           </span>
         </label>
-        <div className="group-hover:translate-y-0 group-[.active]:!opacity-0 group-[.active]:!invisible  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute top-full bg-white z-30 w-[250px] rounded-lg p-4 shadow-4xl">
+        <div className="group-hover:translate-y-0 group-[.active]:!opacity-0 group-[.active]:!invisible  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute top-full bg-white z-30 w-[250px] sm:w-[330px] rounded-lg p-4 shadow-4xl">
           <h3 className="text-base font-medium text-brand-dark pb-1 border-b">
             Refundable Main Cabin
           </h3>
           <ul className="grid gap-1 mt-2">
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconEight} alt="icon" className="w-4" />
               <span>Ticket Price</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconNine} alt="icon" className="w-4" />
+              <span>Upgrade Eligibility</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Changeable Ticket, add'l fees apply</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Carry On Hand Baggage</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>First Checked Bag</span>
+            </li>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Mileage Accrual</span>
+            </li>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Advance Seat Selection, add'l fees apply</span>
             </li>
           </ul>
         </div>
@@ -158,30 +176,38 @@ export default function Fees() {
             </span>
           </span>
         </label>
-        <div className="group-hover:translate-y-0 group-[.active]:!opacity-0 group-[.active]:!invisible  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute top-full bg-white z-30 w-[250px] rounded-lg p-4 shadow-4xl">
+        <div className="group-hover:translate-y-0 group-[.active]:!opacity-0 group-[.active]:!invisible  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute top-full bg-white z-30 w-[250px] sm:w-[330px] rounded-lg p-4 shadow-4xl">
           <h3 className="text-base font-medium text-brand-dark pb-1 border-b">
             Refundable Main Cabin
           </h3>
           <ul className="grid gap-1 mt-2">
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconEight} alt="icon" className="w-4" />
               <span>Ticket Price</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconNine} alt="icon" className="w-4" />
+              <span>Upgrade Eligibility</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Changeable Ticket, add'l fees apply</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Carry On Hand Baggage</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>First Checked Bag</span>
+            </li>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Mileage Accrual</span>
+            </li>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Advance Seat Selection, add'l fees apply</span>
             </li>
           </ul>
         </div>
@@ -217,30 +243,38 @@ export default function Fees() {
             </span>
           </span>
         </label>
-        <div className="group-hover:translate-y-0 group-[.active]:!opacity-0 group-[.active]:!invisible  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute top-full bg-white z-30 w-[250px] rounded-lg p-4 shadow-4xl">
+        <div className="group-hover:translate-y-0 group-[.active]:!opacity-0 group-[.active]:!invisible  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute top-full bg-white z-30 w-[250px] sm:w-[330px] rounded-lg p-4 shadow-4xl">
           <h3 className="text-base font-medium text-brand-dark pb-1 border-b">
             Refundable Main Cabin
           </h3>
           <ul className="grid gap-1 mt-2">
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconEight} alt="icon" className="w-4" />
               <span>Ticket Price</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconNine} alt="icon" className="w-4" />
+              <span>Upgrade Eligibility</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Changeable Ticket, add'l fees apply</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Carry On Hand Baggage</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>First Checked Bag</span>
+            </li>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Mileage Accrual</span>
+            </li>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Advance Seat Selection, add'l fees apply</span>
             </li>
           </ul>
         </div>
@@ -276,30 +310,38 @@ export default function Fees() {
             </span>
           </span>
         </label>
-        <div className="group-hover:translate-y-0 group-[.active]:!opacity-0 group-[.active]:!invisible  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute top-full bg-white z-30 w-[250px] rounded-lg p-4 shadow-4xl">
+        <div className="group-hover:translate-y-0 group-[.active]:!opacity-0 group-[.active]:!invisible  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute top-full bg-white z-30 w-[250px] sm:w-[330px] rounded-lg p-4 shadow-4xl">
           <h3 className="text-base font-medium text-brand-dark pb-1 border-b">
             Refundable Main Cabin
           </h3>
           <ul className="grid gap-1 mt-2">
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconEight} alt="icon" className="w-4" />
               <span>Ticket Price</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconNine} alt="icon" className="w-4" />
+              <span>Upgrade Eligibility</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Changeable Ticket, add'l fees apply</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Carry On Hand Baggage</span>
             </li>
-            <li className="flex gap-2 items-center text-sm text-brand-gray">
-              <img src={icon} alt="icon" />
-              <span>Ticket Price</span>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>First Checked Bag</span>
+            </li>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Mileage Accrual</span>
+            </li>
+            <li className="flex gap-2 sm:items-center text-sm text-brand-gray">
+              <img src={iconTen} alt="icon" className="w-4" />
+              <span>Advance Seat Selection, add'l fees apply</span>
             </li>
           </ul>
         </div>

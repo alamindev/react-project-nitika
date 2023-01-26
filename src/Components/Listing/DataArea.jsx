@@ -9,10 +9,8 @@ import iconTwo from "../../assets/images/listing/icon-2.svg";
 import iconThree from "../../assets/images/listing/icon-3.svg";
 import iconFour from "../../assets/images/listing/icon-4.svg";
 import iconFive from "../../assets/images/listing/icon-5.svg";
-import {
-  default as icon,
-  default as iconSix,
-} from "../../assets/images/listing/icon-6.svg";
+import { default as iconSix } from "../../assets/images/listing/icon-6.svg";
+import iconSeven from "../../assets/images/listing/icon-7.svg";
 import listImgOne from "../../assets/images/listing/list-img-1.png";
 import listImgTwo from "../../assets/images/listing/list-img-2.png";
 import Love from "../Svg/Love";
@@ -26,7 +24,7 @@ export default function DataArea() {
 
   return (
     <div className="space-y-8 mt-8">
-      <div className="relative bg-white rounded-xl overflow-hidden">
+      <div className="relative bg-white rounded-xl overflow-x-clip">
         <div className="relative">
           <div className="w-[60px] h-[60px] hidden md:block rounded-full bg-brand-gray-600 top-1/2 -translate-y-1/2 -left-8 absolute"></div>
           <div className="w-[60px] h-[60px] hidden md:block rounded-full bg-brand-gray-600 top-1/2 -translate-y-1/2 -right-8 absolute"></div>
@@ -170,32 +168,58 @@ export default function DataArea() {
                     <span>3</span>
                   </li>
                 </ul>
-                <div className="group-hover:translate-y-0  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-4 shadow-4xl">
+                <div className="group-hover:translate-y-0 top-0 translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-5 shadow-4xl">
                   <h3 className="text-base font-medium text-brand-dark pb-1 ">
                     Price Breakdown
                   </h3>
-                  <ul className="grid gap-1.5 mt-2">
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                  <ul className="grid gap-1.5 mt-2 pb-3">
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconSeven} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Ticket Price
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          $4,082
+                        </p>
+                      </div>
                     </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconOne} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Checked bag (2)
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
                     </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
-                    </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
-                    </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconTwo} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Carry-on bag (3)
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
+                      <p className="text-xs text-brand-blue-dark text-opacity-75">
+                        Up to 50lbs per bag, and 62in total
+                      </p>
                     </li>
                   </ul>
+                  <div className="flex justify-between items-center pt-2 border-t">
+                    <h3 className="font-medium text-brand-blue-dark ">Total</h3>
+                    <p className=" text-brand-blue-dark font-medium">$897</p>
+                  </div>
                 </div>
               </div>
               <div className="space-y-3">
@@ -230,7 +254,7 @@ export default function DataArea() {
           <Details />
         </div>
       </div>
-      <div className="relative bg-white rounded-xl overflow-hidden">
+      <div className="relative bg-white rounded-xl overflow-x-clip">
         <div className="relative">
           <div className="w-[60px] h-[60px] hidden md:block rounded-full bg-brand-gray-600 top-1/2 -translate-y-1/2 -left-8 absolute"></div>
           <div className="w-[60px] h-[60px] hidden md:block rounded-full bg-brand-gray-600 top-1/2 -translate-y-1/2 -right-8 absolute"></div>
@@ -373,32 +397,58 @@ export default function DataArea() {
                     <span>3</span>
                   </li>
                 </ul>
-                <div className="group-hover:translate-y-0  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-4 shadow-4xl">
+                <div className="group-hover:translate-y-0 top-0 translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-5 shadow-4xl">
                   <h3 className="text-base font-medium text-brand-dark pb-1 ">
                     Price Breakdown
                   </h3>
-                  <ul className="grid gap-1.5 mt-2">
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                  <ul className="grid gap-1.5 mt-2 pb-3">
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconSeven} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Ticket Price
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          $4,082
+                        </p>
+                      </div>
                     </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconOne} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Checked bag (2)
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
                     </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
-                    </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
-                    </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconTwo} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Carry-on bag (3)
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
+                      <p className="text-xs text-brand-blue-dark text-opacity-75">
+                        Up to 50lbs per bag, and 62in total
+                      </p>
                     </li>
                   </ul>
+                  <div className="flex justify-between items-center pt-2 border-t">
+                    <h3 className="font-medium text-brand-blue-dark ">Total</h3>
+                    <p className=" text-brand-blue-dark font-medium">$897</p>
+                  </div>
                 </div>
               </div>
               <div className="space-y-3">
@@ -438,7 +488,7 @@ export default function DataArea() {
           <img src={adsFour} alt="ads" />
         </figure>
       </div>
-      <div className="relative bg-white rounded-xl overflow-hidden">
+      <div className="relative bg-white rounded-xl overflow-x-clip">
         <div className="relative">
           <div className="w-[60px] h-[60px] hidden md:block rounded-full bg-brand-gray-600 top-1/2 -translate-y-1/2 -left-8 absolute"></div>
           <div className="w-[60px] h-[60px] hidden md:block rounded-full bg-brand-gray-600 top-1/2 -translate-y-1/2 -right-8 absolute"></div>
@@ -581,32 +631,58 @@ export default function DataArea() {
                     <span>3</span>
                   </li>
                 </ul>
-                <div className="group-hover:translate-y-0  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-4 shadow-4xl">
+                <div className="group-hover:translate-y-0 top-0 translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-5 shadow-4xl">
                   <h3 className="text-base font-medium text-brand-dark pb-1 ">
                     Price Breakdown
                   </h3>
-                  <ul className="grid gap-1.5 mt-2">
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                  <ul className="grid gap-1.5 mt-2 pb-3">
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconSeven} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Ticket Price
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          $4,082
+                        </p>
+                      </div>
                     </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconOne} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Checked bag (2)
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
                     </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
-                    </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
-                    </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconTwo} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Carry-on bag (3)
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
+                      <p className="text-xs text-brand-blue-dark text-opacity-75">
+                        Up to 50lbs per bag, and 62in total
+                      </p>
                     </li>
                   </ul>
+                  <div className="flex justify-between items-center pt-2 border-t">
+                    <h3 className="font-medium text-brand-blue-dark ">Total</h3>
+                    <p className=" text-brand-blue-dark font-medium">$897</p>
+                  </div>
                 </div>
               </div>
               <div className="space-y-3">
@@ -641,7 +717,7 @@ export default function DataArea() {
           <Details />
         </div>
       </div>
-      <div className="relative bg-white rounded-xl overflow-hidden">
+      <div className="relative bg-white rounded-xl overflow-x-clip">
         <div className="relative">
           <div className="w-[60px] h-[60px] hidden md:block rounded-full bg-brand-gray-600 top-1/2 -translate-y-1/2 -left-8 absolute"></div>
           <div className="w-[60px] h-[60px] hidden md:block rounded-full bg-brand-gray-600 top-1/2 -translate-y-1/2 -right-8 absolute"></div>
@@ -805,32 +881,108 @@ export default function DataArea() {
                     <span>3</span>
                   </li>
                 </ul>
-                <div className="group-hover:translate-y-0  translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-4 shadow-4xl">
+                <div className="group-hover:translate-y-0 top-0 translate-y-10 transition-all group-hover:opacity-100 opacity-0 invisible group-hover:visible absolute right-full bg-white z-30 w-[250px] rounded-lg p-5 shadow-4xl">
                   <h3 className="text-base font-medium text-brand-dark pb-1 ">
                     Price Breakdown
                   </h3>
-                  <ul className="grid gap-1.5 mt-2">
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                  <ul className="grid gap-1.5 mt-2 pb-3">
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconSeven} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Ticket Price
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          $4,082
+                        </p>
+                      </div>
                     </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconSeven} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Checked bag (2)
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
                     </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconSeven} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Carry-on bag (3)
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
+                      <p className="text-xs text-brand-blue-dark text-opacity-75">
+                        Up to 50lbs per bag, and 62in total
+                      </p>
                     </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconSeven} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            1 Meal (3)
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
                     </li>
-                    <li className="flex gap-2 items-center text-sm text-brand-gray">
-                      <img src={icon} alt="icon" />
-                      <span>Ticket Price</span>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconSeven} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Seats (3)
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
+                    </li>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconSeven} alt="icon" />
+                          <span className="text-brand-blue-dark">Outlets</span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
+                    </li>
+                    <li className="space-y-2">
+                      <div className="flex gap-2 items-center justify-between text-sm">
+                        <div className="flex gap-2 items-center">
+                          <img src={iconSeven} alt="icon" />
+                          <span className="text-brand-blue-dark">
+                            Movie Library
+                          </span>
+                        </div>
+                        <p className="text-brand-blue-dark text-opacity-75">
+                          Included
+                        </p>
+                      </div>
                     </li>
                   </ul>
+                  <div className="flex justify-between items-center pt-2 border-t">
+                    <h3 className="font-medium text-brand-blue-dark ">Total</h3>
+                    <p className=" text-brand-blue-dark font-medium">$4,082</p>
+                  </div>
                 </div>
               </div>
               <div className="space-y-3">
@@ -893,10 +1045,10 @@ export default function DataArea() {
                 href="#"
                 className="w-[48px]  group-[.active]:bg-brand-dark group-[.active]:text-white hover:bg-brand-dark hover:text-white h-[48px] flex justify-center items-center text-lg font-medium rounded-md border border-brand-gray-light"
               >
-                3
+                3 <span className="sm:hidden">...</span>
               </a>
             </li>
-            <li>
+            <li className="hidden sm:block">
               <a
                 href="#"
                 className="w-[48px]  group-[.active]:bg-brand-dark group-[.active]:text-white hover:bg-brand-dark hover:text-white h-[48px] flex justify-center items-center text-lg font-medium rounded-md border border-brand-gray-light"
@@ -904,12 +1056,12 @@ export default function DataArea() {
                 4
               </a>
             </li>
-            <li>
+            <li className="hidden sm:block">
               <a
                 href="#"
                 className="w-[48px]  group-[.active]:bg-brand-dark group-[.active]:text-white hover:bg-brand-dark hover:text-white h-[48px] flex justify-center items-center text-lg font-medium rounded-md border border-brand-gray-light"
               >
-                5..
+                5 <span className="sm:block hidden">..</span>
               </a>
             </li>
           </ul>
