@@ -53,7 +53,7 @@ export default function SectionOne() {
               </div>
               <p className="text-sm text-white sm:hidden pt-4 text-opacity-50">
                 Expires Sep 30, 2022. Restrictions apply.
-                <a href="#" class="underline">
+                <a href="#" className="underline">
                   Learn more
                 </a>
                 |

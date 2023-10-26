@@ -159,7 +159,7 @@ export default function Filter() {
                       <li className="checkbox-black">
                         <input type="radio" id="rountip" name="type" checked />
                         <label
-                          for="rountip"
+                          htmlFor="rountip"
                           className="text-sm sm:text-lg text-brand-gray-500"
                         >
                           Round Trip
@@ -168,7 +168,7 @@ export default function Filter() {
                       <li className="checkbox-black">
                         <input type="radio" id="oneway" name="type" />
                         <label
-                          for="oneway"
+                          htmlFor="oneway"
                           className="text-sm sm:text-lg text-brand-gray-500"
                         >
                           One Way
@@ -177,7 +177,7 @@ export default function Filter() {
                       <li className="checkbox-black">
                         <input type="radio" id="multicity" name="type" />
                         <label
-                          for="multicity"
+                          htmlFor="multicity"
                           className="text-sm sm:text-lg text-brand-gray-500"
                         >
                           Multi CIty
@@ -303,7 +303,7 @@ export default function Filter() {
                       <li className="checkbox-black">
                         <input type="radio" id="rountip" name="type" checked />
                         <label
-                          for="rountip"
+                          htmlFor="rountip"
                           className="text-sm sm:text-lg text-brand-gray-500"
                         >
                           Round Trip
@@ -312,7 +312,7 @@ export default function Filter() {
                       <li className="checkbox-black">
                         <input type="radio" id="oneway" name="type" />
                         <label
-                          for="oneway"
+                          htmlFor="oneway"
                           className="text-sm sm:text-lg text-brand-gray-500"
                         >
                           One Way
@@ -321,7 +321,7 @@ export default function Filter() {
                       <li className="checkbox-black">
                         <input type="radio" id="multicity" name="type" />
                         <label
-                          for="multicity"
+                          htmlFor="multicity"
                           className="text-sm sm:text-lg text-brand-gray-500"
                         >
                           Multi CIty
@@ -636,7 +636,7 @@ export default function Filter() {
                       <li className="checkbox-black">
                         <input type="radio" id="rountip" name="type" checked />
                         <label
-                          for="rountip"
+                          htmlFor="rountip"
                           className="text-sm sm:text-lg text-brand-gray-500"
                         >
                           Round Trip
@@ -645,7 +645,7 @@ export default function Filter() {
                       <li className="checkbox-black">
                         <input type="radio" id="oneway" name="type" />
                         <label
-                          for="oneway"
+                          htmlFor="oneway"
                           className="text-sm sm:text-lg text-brand-gray-500"
                         >
                           One Way
@@ -654,7 +654,7 @@ export default function Filter() {
                       <li className="checkbox-black">
                         <input type="radio" id="multicity" name="type" />
                         <label
-                          for="multicity"
+                          htmlFor="multicity"
                           className="text-sm sm:text-lg text-brand-gray-500"
                         >
                           Multi CIty

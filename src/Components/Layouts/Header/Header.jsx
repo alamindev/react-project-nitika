@@ -15,7 +15,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="  sticky top-0 z-50">
+    <header className="overflow-x-clip  sticky top-0 z-50">
       <DiscountAlert />
       <div className="relative px-4 py-4 lg:py-0 shadow-custom bg-white">
         <div className="container mx-auto relative lg:static z-30">

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import userAvatar from "../assets/images/listing/user-avatar.png";
 import LayoutTwo from "../Components/Layouts/LayoutTwo";
 import Ads from "../Components/Listing/Ads";
 import Filter from "../Components/Listing/Filter";
 import Main from "../Components/Listing/Main";
 import Sidebar from "../Components/Listing/Sidebar";
+import userAvatar from "../assets/images/listing/user-avatar.png";
 function Inactivity() {
   let [open, setOpen] = useState(false);
   const openFilter = () => {

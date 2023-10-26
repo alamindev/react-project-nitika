@@ -41,23 +41,23 @@ export default function Details({ border }) {
           <div className="flex gap-14 flex-col">
             <div className="flex justify-between">
               <div className="w-[580px] max-w-full">
-                <div class="flow-root">
-                  <ul role="list" class="-mb-8">
+                <div className="flow-root">
+                  <ul role="list" className="-mb-8">
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
+                      <div className="relative pb-5 sm:pb-8">
                         <span
-                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
                           aria-hidden="true"
                         ></span>
-                        <div class="relative flex items-start space-x-2 sm:space-x-3">
-                          <div class="relative pb-4 bg-white">
+                        <div className="relative flex items-start space-x-2 sm:space-x-3">
+                          <div className="relative pb-4 bg-white">
                             <img
                               className="w-[36px] h-[36px] sm:w-auto sm:h0auto"
                               src={listImgOne}
                               alt="list-img-one"
                             />
                           </div>
-                          <div class="min-w-0 flex-1 space-y-2">
+                          <div className="min-w-0 flex-1 space-y-2">
                             <div className="flex flex-wrap xl:flex-nowrap items-center  gap-1.5 xl:gap-5">
                               <p className="text-brand-dark text-opacity-75 xl:w-auto w-full text-base">
                                 <strong className="text-brand-blue-100 font-medium sm:font-semibold">
@@ -104,20 +104,20 @@ export default function Details({ border }) {
                       </div>
                     </li>
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
+                      <div className="relative pb-5 sm:pb-8">
                         <span
-                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
                           aria-hidden="true"
                         ></span>
-                        <div class="relative flex items-start space-x-3">
+                        <div className="relative flex items-start space-x-3">
                           <div>
-                            <div class="relative px-1">
-                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                            <div className="relative px-1">
+                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
                                 <img src={planeDown} alt="plane" />
                               </div>
                             </div>
                           </div>
-                          <div class="min-w-0 flex-1 space-y-2">
+                          <div className="min-w-0 flex-1 space-y-2">
                             <p className="text-sm sm:text-base text-brand-dark sm:leading-none">
                               Spirit Airlines
                             </p>
@@ -129,20 +129,20 @@ export default function Details({ border }) {
                       </div>
                     </li>
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
+                      <div className="relative pb-5 sm:pb-8">
                         <span
-                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
                           aria-hidden="true"
                         ></span>
-                        <div class="relative flex items-start space-x-3">
+                        <div className="relative flex items-start space-x-3">
                           <div>
-                            <div class="relative px-1">
-                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                            <div className="relative px-1">
+                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
                                 <div className="w-3 h-3 rounded-full bg-brand-blue-25"></div>
                               </div>
                             </div>
                           </div>
-                          <div class="min-w-0 flex-1 py-0">
+                          <div className="min-w-0 flex-1 py-0">
                             <div className="w-full rounded-md flex-col md:flex-row border border-brand-blue-25 px-4 py-2 bg-brand-gray-10 flex justify-between md:items-center">
                               <p className="text-brand-blue-100 text-sm">
                                 Stop at AMS
@@ -310,23 +310,23 @@ export default function Details({ border }) {
             </div>
             <div className="flex justify-between relative">
               <div className="w-[580px] max-w-full">
-                <div class="flow-root">
-                  <ul role="list" class="-mb-8">
+                <div className="flow-root">
+                  <ul role="list" className="-mb-8">
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
+                      <div className="relative pb-5 sm:pb-8">
                         <span
-                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
                           aria-hidden="true"
                         ></span>
-                        <div class="relative flex items-start space-x-2 sm:space-x-3">
-                          <div class="relative pb-4 bg-white">
+                        <div className="relative flex items-start space-x-2 sm:space-x-3">
+                          <div className="relative pb-4 bg-white">
                             <img
                               className="w-[36px] h-[36px] sm:w-auto sm:h0auto"
                               src={listImgOne}
                               alt="list-img-one"
                             />
                           </div>
-                          <div class="min-w-0 flex-1 space-y-2">
+                          <div className="min-w-0 flex-1 space-y-2">
                             <div className="flex flex-wrap xl:flex-nowrap items-center  gap-1.5 xl:gap-5">
                               <p className="text-brand-dark text-opacity-75 xl:w-auto w-full text-base">
                                 <strong className="text-brand-blue-100 font-medium sm:font-semibold">
@@ -373,20 +373,20 @@ export default function Details({ border }) {
                       </div>
                     </li>
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
+                      <div className="relative pb-5 sm:pb-8">
                         <span
-                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
                           aria-hidden="true"
                         ></span>
-                        <div class="relative flex items-start space-x-3">
+                        <div className="relative flex items-start space-x-3">
                           <div>
-                            <div class="relative px-1">
-                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                            <div className="relative px-1">
+                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
                                 <img src={planeDown} alt="plane" />
                               </div>
                             </div>
                           </div>
-                          <div class="min-w-0 flex-1 space-y-2">
+                          <div className="min-w-0 flex-1 space-y-2">
                             <p className="text-sm sm:text-base text-brand-dark sm:leading-none">
                               Spirit Airlines
                             </p>
@@ -398,16 +398,16 @@ export default function Details({ border }) {
                       </div>
                     </li>
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
-                        <div class="relative flex items-start space-x-3">
+                      <div className="relative pb-5 sm:pb-8">
+                        <div className="relative flex items-start space-x-3">
                           <div>
-                            <div class="relative px-1">
-                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                            <div className="relative px-1">
+                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
                                 <div className="w-3 h-3 rounded-full bg-brand-blue-25"></div>
                               </div>
                             </div>
                           </div>
-                          <div class="min-w-0 flex-1 py-0">
+                          <div className="min-w-0 flex-1 py-0">
                             <div className="w-full rounded-md flex-col md:flex-row border border-brand-dark px-4 py-2 bg-brand-dark flex justify-between md:items-center">
                               <p className="text-white text-sm">Stop at AMS</p>
                               <p className="text-sm font-medium text-white">
@@ -588,23 +588,23 @@ export default function Details({ border }) {
           <div className="flex gap-14 flex-col">
             <div className="flex justify-between">
               <div className="w-[580px] max-w-full">
-                <div class="flow-root">
-                  <ul role="list" class="-mb-8">
+                <div className="flow-root">
+                  <ul role="list" className="-mb-8">
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
+                      <div className="relative pb-5 sm:pb-8">
                         <span
-                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
                           aria-hidden="true"
                         ></span>
-                        <div class="relative flex items-start space-x-2 sm:space-x-3">
-                          <div class="relative pb-4 bg-white">
+                        <div className="relative flex items-start space-x-2 sm:space-x-3">
+                          <div className="relative pb-4 bg-white">
                             <img
                               className="w-[36px] h-[36px] sm:w-auto sm:h0auto"
                               src={listImgOne}
                               alt="list-img-one"
                             />
                           </div>
-                          <div class="min-w-0 flex-1 space-y-2">
+                          <div className="min-w-0 flex-1 space-y-2">
                             <div className="flex flex-wrap xl:flex-nowrap items-center  gap-1.5 xl:gap-5">
                               <p className="text-brand-dark text-opacity-75 xl:w-auto w-full text-base">
                                 <strong className="text-brand-blue-100 font-medium sm:font-semibold">
@@ -651,20 +651,20 @@ export default function Details({ border }) {
                       </div>
                     </li>
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
+                      <div className="relative pb-5 sm:pb-8">
                         <span
-                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
                           aria-hidden="true"
                         ></span>
-                        <div class="relative flex items-start space-x-3">
+                        <div className="relative flex items-start space-x-3">
                           <div>
-                            <div class="relative px-1">
-                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                            <div className="relative px-1">
+                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
                                 <img src={planeDown} alt="plane" />
                               </div>
                             </div>
                           </div>
-                          <div class="min-w-0 flex-1 space-y-2">
+                          <div className="min-w-0 flex-1 space-y-2">
                             <p className="text-sm sm:text-base text-brand-dark sm:leading-none">
                               Spirit Airlines
                             </p>
@@ -676,20 +676,20 @@ export default function Details({ border }) {
                       </div>
                     </li>
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
+                      <div className="relative pb-5 sm:pb-8">
                         <span
-                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
                           aria-hidden="true"
                         ></span>
-                        <div class="relative flex items-start space-x-3">
+                        <div className="relative flex items-start space-x-3">
                           <div>
-                            <div class="relative px-1">
-                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                            <div className="relative px-1">
+                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
                                 <div className="w-3 h-3 rounded-full bg-brand-blue-25"></div>
                               </div>
                             </div>
                           </div>
-                          <div class="min-w-0 flex-1 py-0">
+                          <div className="min-w-0 flex-1 py-0">
                             <div className="w-full rounded-md flex-col md:flex-row border border-brand-blue-25 px-4 py-2 bg-brand-gray-10 flex justify-between md:items-center">
                               <p className="text-brand-blue-100 text-sm">
                                 Stop at AMS
@@ -857,23 +857,23 @@ export default function Details({ border }) {
             </div>
             <div className="flex justify-between relative">
               <div className="w-[580px] max-w-full">
-                <div class="flow-root">
-                  <ul role="list" class="-mb-8">
+                <div className="flow-root">
+                  <ul role="list" className="-mb-8">
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
+                      <div className="relative pb-5 sm:pb-8">
                         <span
-                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
                           aria-hidden="true"
                         ></span>
-                        <div class="relative flex items-start space-x-2 sm:space-x-3">
-                          <div class="relative pb-4 bg-white">
+                        <div className="relative flex items-start space-x-2 sm:space-x-3">
+                          <div className="relative pb-4 bg-white">
                             <img
                               className="w-[36px] h-[36px] sm:w-auto sm:h0auto"
                               src={listImgOne}
                               alt="list-img-one"
                             />
                           </div>
-                          <div class="min-w-0 flex-1 space-y-2">
+                          <div className="min-w-0 flex-1 space-y-2">
                             <div className="flex flex-wrap xl:flex-nowrap items-center  gap-1.5 xl:gap-5">
                               <p className="text-brand-dark text-opacity-75 xl:w-auto w-full text-base">
                                 <strong className="text-brand-blue-100 font-medium sm:font-semibold">
@@ -920,20 +920,20 @@ export default function Details({ border }) {
                       </div>
                     </li>
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
+                      <div className="relative pb-5 sm:pb-8">
                         <span
-                          class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                          className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
                           aria-hidden="true"
                         ></span>
-                        <div class="relative flex items-start space-x-3">
+                        <div className="relative flex items-start space-x-3">
                           <div>
-                            <div class="relative px-1">
-                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                            <div className="relative px-1">
+                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
                                 <img src={planeDown} alt="plane" />
                               </div>
                             </div>
                           </div>
-                          <div class="min-w-0 flex-1 space-y-2">
+                          <div className="min-w-0 flex-1 space-y-2">
                             <p className="text-sm sm:text-base text-brand-dark sm:leading-none">
                               Spirit Airlines
                             </p>
@@ -945,16 +945,16 @@ export default function Details({ border }) {
                       </div>
                     </li>
                     <li>
-                      <div class="relative pb-5 sm:pb-8">
-                        <div class="relative flex items-start space-x-3">
+                      <div className="relative pb-5 sm:pb-8">
+                        <div className="relative flex items-start space-x-3">
                           <div>
-                            <div class="relative px-1">
-                              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
+                            <div className="relative px-1">
+                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white ring-8 ring-white">
                                 <div className="w-3 h-3 rounded-full bg-brand-blue-25"></div>
                               </div>
                             </div>
                           </div>
-                          <div class="min-w-0 flex-1 py-0">
+                          <div className="min-w-0 flex-1 py-0">
                             <div className="w-full rounded-md flex-col md:flex-row border border-brand-dark px-4 py-2 bg-brand-dark flex justify-between md:items-center">
                               <p className="text-white text-sm">Stop at AMS</p>
                               <p className="text-sm font-medium text-white">
@@ -1130,7 +1130,7 @@ export default function Details({ border }) {
                 <li className="custom-radio shrink-0">
                   <input type="radio" id="trip" name="booking" checked />
                   <label
-                    for="trip"
+                    htmlFor="trip"
                     className="text-sm sm:text-lg text-brand-gray-500"
                   >
                     Main Cabin
@@ -1139,7 +1139,7 @@ export default function Details({ border }) {
                 <li className="custom-radio shrink-0">
                   <input type="radio" id="triptwo" name="booking" />
                   <label
-                    for="triptwo"
+                    htmlFor="triptwo"
                     className="text-sm sm:text-lg text-brand-gray-500"
                   >
                     Refundable Main Cabin
@@ -1148,7 +1148,7 @@ export default function Details({ border }) {
                 <li className="custom-radio shrink-0">
                   <input type="radio" id="tripthree" name="booking" />
                   <label
-                    for="tripthree"
+                    htmlFor="tripthree"
                     className="text-sm sm:text-lg text-brand-gray-500"
                   >
                     Premium
@@ -1157,7 +1157,7 @@ export default function Details({ border }) {
                 <li className="custom-radio shrink-0">
                   <input type="radio" id="tripfour" name="booking" />
                   <label
-                    for="tripfour"
+                    htmlFor="tripfour"
                     className="text-sm sm:text-lg text-brand-gray-500"
                   >
                     Refundable Premium
@@ -1166,7 +1166,7 @@ export default function Details({ border }) {
                 <li className="custom-radio shrink-0">
                   <input type="radio" id="tripfive" name="booking" />
                   <label
-                    for="tripfive"
+                    htmlFor="tripfive"
                     className="text-sm sm:text-lg text-brand-gray-500"
                   >
                     Spirit Business

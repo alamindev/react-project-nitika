@@ -1,16 +1,17 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 import React, { useEffect, useState } from "react";
-import loadingBg from "../assets/images/listing/loading-bg.png";
 import LayoutTwo from "../Components/Layouts/LayoutTwo";
 import Ads from "../Components/Listing/Ads";
 import Filter from "../Components/Listing/Filter";
 import Main from "../Components/Listing/Main";
 import Sidebar from "../Components/Listing/Sidebar";
+import loadingBg from "../assets/images/listing/loading-bg.png";
 function Loading() {
   let [open, setOpen] = useState(false);
   const openFilter = () => {
     setOpen(true);
   };
+  
   const removeFilter = () => {
     setOpen(false);
   };

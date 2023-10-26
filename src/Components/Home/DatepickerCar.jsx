@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import calendar from "../../assets/images/calendar.svg";
+import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css";
-import { DateRange } from "react-date-range";
+import calendar from "../../assets/images/calendar.svg";
 export default function Datepicker() {
   const [value, setValue] = useState(false);
   const [state, setState] = useState([
