@@ -68,7 +68,8 @@ module.exports = {
         custom: "0 3px 6px 0 rgba(0,0,0,0.16)",
         "3xl": "0px -5px 13px -8px rgba(0, 0, 0, 0.15)",
         "4xl": "0 10px 10px 0 rgba(0,0,0,0.10)",
-        "5xl": "0px 10px 20px 0px rgba(0, 0, 0, 0.05)",
+        "5xl": "0px 0px 20px 0px rgba(0, 0, 0, 0.10)",
+        "5.5xl": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
       },
       backgroundImage: {
         g1: "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 100%)",

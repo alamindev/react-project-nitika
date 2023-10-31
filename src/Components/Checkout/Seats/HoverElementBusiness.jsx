@@ -32,7 +32,7 @@ export default function HoverElementBusiness({ hidePopUp }) {
         <figure className="absolute sm:block hidden left-1/2 -top-5 lg:-left-5 max-lg:-translate-x-1/2 lg:top-4 max-lg:rotate-90">
           <img src={arrowLeft} alt="arrow-left" />
         </figure>
-        <div className="relative rounded-2xl shadow-5xl bg-white">
+        <div className="relative rounded-2xl border border-neutral-100 shadow-5xl bg-white">
           <div className="p-4 space-y-3">
             <div className="flex justify-between items-center">
               <h3 className="font-medium text-base text-brand-dark">

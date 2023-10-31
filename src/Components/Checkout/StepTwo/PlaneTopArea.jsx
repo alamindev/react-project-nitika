@@ -3,9 +3,9 @@ import { Scrollbar } from "swiper";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
-import BusinessSeat from "../Seats/BusinessSeat";
-import EconomySeat from "../Seats/EconomySeat";
-import EconomySeatLegRoom from "../Seats/EconomySeatLegRoom";
+import Business from "../Legends/Business";
+import Economy from "../Legends/Economy";
+import EconomyLegRoom from "../Legends/EconomyLegRoom";
 export default function PlaneTopArea() {
   const contentRef = useRef(null);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -86,7 +86,7 @@ export default function PlaneTopArea() {
           </div>
         </div>
         <div className="relative  md:absolute  md:z-40 top-0 lg:top-16  xl:top-0 right-0   px-4 md:p-4 xl:p-6 ">
-          <div className="w-[380px] max-w-full md:w-[325px]  rounded-xl  shadow-5xl  border-brand-blue-50  bg-white">
+          <div className="w-[380px] max-w-full md:w-[325px]  rounded-xl shadow-5.5xl sm:shadow-5xl border  border-brand-blue-50  bg-white">
             <div className="p-4 sm:p-6 space-y-2">
               <h3 className="font-medium text-lg !leading-snug text-brand-dark">
                 Spirit Airlines Boeing 240 Passengers 285-305
@@ -147,13 +147,13 @@ export default function PlaneTopArea() {
                               </h4>
                               <ul className="space-y-2 grid justify-center">
                                 <li>
-                                  <BusinessSeat status={"unavailable"} />
+                                  <Business status={"unavailable"} />
                                 </li>
                                 <li>
-                                  <BusinessSeat status={"selected"} />
+                                  <Business status={"selected"} />
                                 </li>
                                 <li>
-                                  <BusinessSeat status={"available"} />
+                                  <Business status={"available"} />
                                 </li>
                               </ul>
                             </div>
@@ -163,15 +163,15 @@ export default function PlaneTopArea() {
                               <h4 className="text-xs sm:text-sm text-center uppercase font-medium text-brand-dark/50">
                                 economy
                               </h4>
-                              <ul className="space-y-2 grid justify-center">
+                              <ul className="space-y-3 grid justify-center">
                                 <li>
-                                  <EconomySeat status={"unavailable"} />
+                                  <Economy status={"unavailable"} />
                                 </li>
                                 <li>
-                                  <EconomySeat status={"selected"} />
+                                  <Economy status={"selected"} />
                                 </li>
                                 <li>
-                                  <EconomySeat status={"available"} />
+                                  <Economy status={"available"} />
                                 </li>
                               </ul>
                             </div>
@@ -181,15 +181,15 @@ export default function PlaneTopArea() {
                               <h4 className="text-xs sm:text-sm -mt-5 text-center uppercase font-medium text-brand-dark/50">
                                 Extra <br /> Legroom
                               </h4>
-                              <ul className="space-y-2 grid justify-center">
+                              <ul className="space-y-3 grid justify-center">
                                 <li>
-                                  <EconomySeatLegRoom status={"unavailable"} />
+                                  <EconomyLegRoom status={"unavailable"} />
                                 </li>
                                 <li>
-                                  <EconomySeatLegRoom status={"selected"} />
+                                  <EconomyLegRoom status={"selected"} />
                                 </li>
                                 <li>
-                                  <EconomySeatLegRoom status={"available"} />
+                                  <EconomyLegRoom status={"available"} />
                                 </li>
                               </ul>
                             </div>
@@ -201,16 +201,16 @@ export default function PlaneTopArea() {
                               </h4>
                               <ul className="space-y-2 grid justify-center">
                                 <li className="flex gap-2 items-center">
-                                  <BusinessSeat status={"unavailable"} is_red />
-                                  <EconomySeat status={"unavailable"} is_red />
+                                  <Business status={"unavailable"} is_red />
+                                  <Economy status={"unavailable"} is_red />
                                 </li>
                                 <li className="flex gap-2 items-center">
-                                  <BusinessSeat status={"selected"} is_red />
-                                  <EconomySeat status={"selected"} is_red />
+                                  <Business status={"selected"} is_red />
+                                  <Economy status={"selected"} is_red />
                                 </li>
                                 <li className="flex gap-2 items-center">
-                                  <BusinessSeat status={"available"} is_red />
-                                  <EconomySeat status={"available"} is_red />
+                                  <Business status={"available"} is_red />
+                                  <Economy status={"available"} is_red />
                                 </li>
                               </ul>
                             </div>

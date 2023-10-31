@@ -249,7 +249,7 @@ export default function SelectYourSeats() {
           </div>
         </div>
         <div className="relative bg-brand-blue-10 -mx-4 xl:-mx-6 h-[2000px] sm:min-h-[2350px]">
-          <figure className="absolute w-full left-0 top-0 right-0  ">
+          <figure className="absolute w-full left-0 top-5 sm:top-0 right-0  ">
             <img
               className="w-full sm:block hidden h-[2000px] sm:h-[2500px] object-cover object-top "
               src={airplane}

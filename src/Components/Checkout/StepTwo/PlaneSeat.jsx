@@ -7,8 +7,8 @@ export default function PlaneSeat() {
   return (
     <>
       <div className="space-y-3 sm:space-y-5">
-        <div className="flex justify-between items-center  ">
-          <div className="w-[130px] py-2.5 flex justify-center items-center rounded rounded-tl-2xl bg-brand-blue-40">
+        <div className="flex gap-7 justify-between items-center  ">
+          <div className="w-full sm:w-[130px] py-2.5 flex justify-center items-center rounded rounded-tl-2xl bg-brand-blue-40">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -37,7 +37,7 @@ export default function PlaneSeat() {
               Bulk Head
             </p>
           </div>
-          <div className="w-[130px] py-2.5 flex justify-center items-center rounded rounded-tr-2xl bg-brand-blue-40">
+          <div className="w-full sm:w-[130px] py-2.5 flex justify-center items-center rounded rounded-tr-2xl bg-brand-blue-40">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -131,7 +131,7 @@ export default function PlaneSeat() {
                   <BusinessSeat status="available" is_crown />
                 </div>
               </div>
-              <div className="grid grid-cols-1 pt-2">
+              <div className="grid grid-cols-1  px-4 sm:px-0 pt-2">
                 <div className="py-2.5 flex gap-4 px-2 sm:px-4 justify-center items-center rounded  bg-brand-blue-40">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -199,7 +199,7 @@ export default function PlaneSeat() {
                   <BusinessSeat status="unavailable" />
                 </div>
               </div>
-              <div className="grid grid-cols-1  pt-2">
+              <div className="grid grid-cols-1 px-4 sm:px-0 pt-2">
                 <div className="py-2.5 flex gap-4 px-2 sm:px-4 justify-center items-center rounded  bg-brand-blue-40">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +267,7 @@ export default function PlaneSeat() {
                   <BusinessSeat status="unavailable" />
                 </div>
               </div>
-              <div className="grid grid-cols-1  pt-2">
+              <div className="grid grid-cols-1 px-4 sm:px-0  pt-2">
                 <div className="py-2.5 flex gap-4 px-2 sm:px-4 justify-center items-center rounded  bg-brand-blue-40">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -386,7 +386,7 @@ export default function PlaneSeat() {
                     <BusinessSeat status="available" is_red is_star />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 pt-2">
+                <div className="grid grid-cols-1 pt-2  px-4 sm:px-0">
                   <div className="py-2.5 flex gap-4 px-2 sm:px-4 justify-center items-center rounded  bg-brand-blue-40">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -406,7 +406,7 @@ export default function PlaneSeat() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-6 pb-6">
+              <div className="space-y-5 pb-7 pt-1">
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
                   3
                 </p>
@@ -527,7 +527,7 @@ export default function PlaneSeat() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-6 pb-6">
+              <div className="space-y-5 pb-7 pt-1">
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
                   3
                 </p>
@@ -616,7 +616,7 @@ export default function PlaneSeat() {
                     <BusinessSeat status="unavailable" />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 pt-2">
+                <div className="grid grid-cols-1 pt-2  px-4 sm:px-0">
                   <div className="py-2.5 flex gap-4 px-2 sm:px-4 justify-center items-center rounded  bg-brand-blue-40">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -654,7 +654,7 @@ export default function PlaneSeat() {
         </div>
 
         {/* for exit  */}
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center px-3 sm:px-0">
           <div className="flex gap-1.5 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -687,7 +687,7 @@ export default function PlaneSeat() {
             </svg>
           </div>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center px-3 sm:px-0">
           <div className="space-y-2">
             <div className="w-full sm:w-[130px] py-1.5 flex justify-center items-center rounded   bg-brand-blue-40">
               <svg
@@ -1010,7 +1010,7 @@ export default function PlaneSeat() {
                     <EconomySeat status="unavailable" is_red />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 pt-2">
+                <div className="grid grid-cols-1 pt-2  px-3 sm:px-0">
                   <div className="py-1.5 flex gap-4 px-4 justify-center items-center rounded  bg-brand-blue-40">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1030,7 +1030,7 @@ export default function PlaneSeat() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-4 sm:space-y-[15px] pt-2 sm:pt-3  pb-6">
+              <div className="space-y-4 sm:space-y-[15px] pt-2.5 sm:pt-3  pb-6">
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
                   9
                 </p>
@@ -1188,7 +1188,7 @@ export default function PlaneSeat() {
                     <EconomySeat status="unavailable" is_red />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 pt-2">
+                <div className="grid grid-cols-1 pt-2  px-3 sm:px-0">
                   <div className="py-1.5 flex gap-4 px-4 justify-center items-center rounded  bg-brand-blue-40">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1208,7 +1208,7 @@ export default function PlaneSeat() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-4 sm:space-y-[15px] pt-2 sm:pt-3  pb-6">
+              <div className="space-y-4 sm:space-y-[15px] pt-2.5 sm:pt-3  pb-6">
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
                   9
                 </p>
@@ -1366,7 +1366,7 @@ export default function PlaneSeat() {
                     <EconomySeat status="unavailable" is_red />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 pt-2">
+                <div className="grid grid-cols-1 pt-2  px-3 sm:px-0">
                   <div className="py-1.5 flex gap-4 px-4 justify-center items-center rounded  bg-brand-blue-40">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1403,7 +1403,7 @@ export default function PlaneSeat() {
           </div>
         </div>
         {/* for exit  */}
-        <div className="flex justify-between items-center pt-2 pb-1">
+        <div className="flex justify-between items-center px-3 sm:px-0pt-2 pb-1">
           <div className="flex gap-1.5 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1585,7 +1585,7 @@ export default function PlaneSeat() {
                     <EconomySeat status="unavailable" is_red />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 pt-2">
+                <div className="grid grid-cols-1 pt-2  px-3 sm:px-0">
                   <div className=" py-2.5 flex gap-4 px-2 sm:px-4 justify-center items-center rounded rounded-bl-3xl bg-brand-blue-40">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1605,36 +1605,36 @@ export default function PlaneSeat() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-4 sm:space-y-[15px] pt-2 sm:pt-3  pb-6">
+              <div className="space-y-4 sm:space-y-[15px] pt-2.5 sm:pt-3 pb-8 sm:pb-6">
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  9
+                  19
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  10
+                  20
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  11
+                  21
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  12
+                  22
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  13
+                  23
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  14
+                  24
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  15
+                  25
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  16
+                  26
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  17
+                  27
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  18
+                  28
                 </p>
               </div>
               <div className="space-y-2 w-32">
@@ -1763,7 +1763,7 @@ export default function PlaneSeat() {
                     <EconomySeat status="unavailable" is_red />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 pt-2">
+                <div className="grid grid-cols-1 pt-2  px-1 sm:px-0">
                   <div className="rounded bg-brand-blue-40 w-full sm:w-[130px] py-2.5">
                     <p className="text-base text-center leading-none font-medium text-brand-blue-600">
                       Bulk Head
@@ -1771,36 +1771,36 @@ export default function PlaneSeat() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-4 sm:space-y-[15px] pt-2 sm:pt-3 pb-6">
+              <div className="space-y-4 sm:space-y-[15px] pt-2.5 sm:pt-3 pb-8 sm:pb-6">
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  9
+                  19
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  10
+                  20
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  11
+                  21
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  12
+                  22
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  13
+                  23
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  14
+                  24
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  15
+                  25
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  16
+                  26
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  17
+                  27
                 </p>
                 <p className="uppercase text-xs sm:text-base font-medium text-center text-brand-dark/50">
-                  18
+                  28
                 </p>
               </div>
               <div className="space-y-2 w-32">
@@ -1929,8 +1929,8 @@ export default function PlaneSeat() {
                     <EconomySeat status="unavailable" is_red />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 pt-2">
-                  <div className="w-[130px] py-2.5 flex justify-center items-center rounded rounded-br-3xl bg-brand-blue-40">
+                <div className="grid grid-cols-1 pt-2  px-3 sm:px-0">
+                  <div className="w-full sm:w-[130px] py-2.5 flex justify-center items-center rounded rounded-br-3xl bg-brand-blue-40">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="22"
