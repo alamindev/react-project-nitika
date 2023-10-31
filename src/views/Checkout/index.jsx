@@ -16,7 +16,7 @@ import LayoutTwo from "../../Components/Layouts/LayoutTwo";
 
 function Index() {
   const [isLoading, setIsLoading] = useState(true);
-  const [currentStep, setCurrentStep] = useState(2);
+  const [currentStep, setCurrentStep] = useState(1);
   const [popUp, setPopUp] = useState(false);
   const [didnotSelectSeatPoup, setDidnotSelectSeatPoup] = useState(false);
   const contentRef = useRef(null);
