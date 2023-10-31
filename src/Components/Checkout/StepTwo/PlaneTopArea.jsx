@@ -86,7 +86,7 @@ export default function PlaneTopArea() {
           </div>
         </div>
         <div className="relative  md:absolute  md:z-40 top-0 lg:top-16  xl:top-0 right-0   px-4 md:p-4 xl:p-6 ">
-          <div className="w-[380px] max-w-full md:w-[325px]  rounded-xl shadow-5.5xl sm:shadow-5xl border  border-brand-blue-50  bg-white">
+          <div className="sm:w-[380px] max-w-full md:w-[325px]  rounded-xl shadow-5.5xl sm:shadow-5xl border  border-brand-blue-50  bg-white">
             <div className="p-4 sm:p-6 space-y-2">
               <h3 className="font-medium text-lg !leading-snug text-brand-dark">
                 Spirit Airlines Boeing 240 Passengers 285-305
