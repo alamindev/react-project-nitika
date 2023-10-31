@@ -3,7 +3,7 @@ import check from "../../../assets/images/checkout/c-check.png";
 import pen from "../../../assets/images/checkout/pen.svg";
 import ArrowRight from "../../Svg/ArrowRight";
 import Play from "../../Svg/Play";
-export default function SelectSeats() {
+export default function SelectYourSeats() {
   return (
     <div className=" bg-white lg:rounded-xl px-4 py-6 xl:p-6 w-full space-y-4">
       <h2 className="font-medium text-xl sm:text-2xl text-dark">

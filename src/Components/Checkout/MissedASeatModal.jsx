@@ -1,17 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import alert from "../../assets/images/checkout/alert.png";
 import remove from "../../assets/images/checkout/remove.png";
-export default function SoldOutModal() {
-  let [modal, setModal] = useState(false);
-
-  const closeModal = () => {
-    setModal(false);
-  };
-  useEffect(() => {
-    setTimeout(() => {
-      setModal(true);
-    }, 2000);
-  }, []);
+export default function MissedASeatModal({ modal, closeModal, handlePopup }) {
   return (
     <div
       className={`fixed inset-0 w-full bg-black/60 z-50 transition-all duration-200 ${
@@ -20,7 +10,7 @@ export default function SoldOutModal() {
     >
       <div className="h-screen overflow-y-auto flex  items-center px-4 sm:px-0">
         <div
-          className={`w-[932px] max-w-full mx-auto p-6 sm:p-10  my-10 sm:mt-8 sm:mb-0 bg-white rounded-[24px] relative
+          className={`w-[732px] max-w-full mx-auto p-6 sm:p-10  my-10 sm:mt-8 sm:mb-0 bg-white rounded-[24px] relative
            transition-all duration-300 ${
              modal ? "translate-y-0" : "-translate-y-full"
            }`}
@@ -38,19 +28,25 @@ export default function SoldOutModal() {
             </figure>
             <div className="space-y-4">
               <h2 className="text-center sm:text-left text-black font-medium text-2xl">
-                We’re sorry. We just sold out of the flight you selected.
+                You didn't pick a seat for 1 passengers
               </h2>
               <p className="text-base sm:text-lg text-center sm:text-left text-black">
-                Availability can change quickly based on demand. But don't
-                worry, we have found some great deals on similar flights. Select
-                a new flight to complete your trip.
+                Do you want to keep your current selection and continue anyway?
               </p>
-              <div className="flex justify-center sm:justify-start ">
+              <div className="flex justify-center gap-4 sm:justify-start ">
                 <button
+                  onClick={closeModal}
                   type="button"
-                  className="w-auto px-8 py-2.5 text-lg font-medium text-center text-white rounded-full bg-brand-blue-500 hover:bg-opacity-80 transition-all"
+                  className="rounded-full px-8 py-3.5 hover:bg-opacity-90 transition-all bg-brand-blue-50 text-lg font-medium text-brand-blue-600"
                 >
-                  View Flight
+                  Back
+                </button>
+                <button
+                  onClick={closeModal}
+                  type="button"
+                  className="rounded-full px-8 py-3.5 hover:bg-opacity-90 transition-all text-white bg-brand-blue-500  text-lg font-medium"
+                >
+                  Yes
                 </button>
               </div>
             </div>

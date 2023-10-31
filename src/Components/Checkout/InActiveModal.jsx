@@ -18,7 +18,7 @@ export default function InActiveModal() {
         modal ? "opacity-100 visible" : "opacity-0 invisible"
       }`}
     >
-      <div className="h-screen overflow-y-auto flex  items-center">
+      <div className="h-screen overflow-y-auto flex  items-center px-4 sm:px-0">
         <div
           className={`w-[396px] max-w-full mx-auto p-6 sm:p-10  my-10 sm:mt-8 sm:mb-0 bg-white rounded-[24px] relative
            transition-all duration-300 ${

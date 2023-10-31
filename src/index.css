@@ -241,3 +241,19 @@
 .hide-scroll::-webkit-scrollbar {
   display: none;
 }
+
+.legend .swiper-scrollbar {
+  width: 90% !important;
+}
+
+.popuphover .swiper-pagination-bullet {
+  width: 5px !important;
+  height: 5px !important;
+  background: rgba(233, 233, 233, 0.705) !important;
+  opacity: 1 !important;
+}
+
+.popuphover .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #fff !important;
+  opacity: 1 !important;
+}

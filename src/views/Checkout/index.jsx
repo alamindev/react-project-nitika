@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Alert from "../../Components/Checkout/Alert";
 import Aside from "../../Components/Checkout/Aside";
 import BookingSuccess from "../../Components/Checkout/BookingSuccess";
+import DidnotSelectASeatModal from "../../Components/Checkout/DidnotSelectASeatModal";
 import Header from "../../Components/Checkout/Header";
 import InActiveModal from "../../Components/Checkout/InActiveModal";
 import Info from "../../Components/Checkout/Info";
@@ -15,8 +16,9 @@ import LayoutTwo from "../../Components/Layouts/LayoutTwo";
 
 function Index() {
   const [isLoading, setIsLoading] = useState(true);
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(2);
   const [popUp, setPopUp] = useState(false);
+  const [didnotSelectSeatPoup, setDidnotSelectSeatPoup] = useState(false);
   const contentRef = useRef(null);
 
   const handleNextStep = () => {
@@ -37,6 +39,12 @@ function Index() {
   };
   const closeModal = () => {
     setPopUp(false);
+  };
+  const handleDidnotSelectSeatPopup = () => {
+    setDidnotSelectSeatPoup(true);
+  };
+  const closeDidnotSelectSeatModal = () => {
+    setDidnotSelectSeatPoup(false);
   };
   const goToHome = () => {
     setCurrentStep(1);
@@ -131,8 +139,15 @@ function Index() {
                       </button>
                     )}
                     {currentStep === 2 && (
+                      // <button
+                      //   onClick={handleNextStep}
+                      //   type="button"
+                      //   className="px-8 py-3 sm:py-4 rounded-full text-center w-full sm:w-auto text-white bg-brand-red  text-lg sm:text-xl lg:text-2xl font-medium hover:bg-opacity-80 transition-all"
+                      // >
+                      //   Continue with Payment
+                      // </button>
                       <button
-                        onClick={handleNextStep}
+                        onClick={handleDidnotSelectSeatPopup}
                         type="button"
                         className="px-8 py-3 sm:py-4 rounded-full text-center w-full sm:w-auto text-white bg-brand-red  text-lg sm:text-xl lg:text-2xl font-medium hover:bg-opacity-80 transition-all"
                       >
@@ -162,7 +177,11 @@ function Index() {
           goToHome={goToHome}
           closeModal={closeModal}
         />
-        {currentStep === 2 && <InActiveModal />}
+        <DidnotSelectASeatModal
+          modal={didnotSelectSeatPoup}
+          closeModal={closeDidnotSelectSeatModal}
+        />
+        {currentStep === 4 && <InActiveModal />}
         {currentStep === 3 && <SoldOutModal />}
       </LayoutTwo>
     </>

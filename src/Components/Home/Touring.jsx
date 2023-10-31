@@ -17,7 +17,10 @@ export default function Touring() {
         <div className="flex justify-between flex-col sm:flex-row gap-5 items-center mb-4 ">
           <h2 className="text-2xl md:text-[40px] font-poppins leading-[1.2] text-brand-blue-dark">
             Popular Touring
-            <span className="font-satisfy text-brand-red font-black"> Destinations</span>
+            <span className="font-satisfy text-brand-red font-black">
+              {" "}
+              Destinations
+            </span>
           </h2>
           <a
             href="#"

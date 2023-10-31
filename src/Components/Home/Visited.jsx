@@ -2,11 +2,11 @@ import React from "react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import next from "../../assets/images/next.png";
+import plane from "../../assets/images/plane.png";
 import prev from "../../assets/images/prev.png";
 import product1 from "../../assets/images/product-img-5.png";
 import product2 from "../../assets/images/product-img-6.png";
 import product3 from "../../assets/images/product-img-7.png";
-import plane from "../../assets/images/plane.png";
 import Hearth from "../Svg/Hearth";
 // Import Swiper styles
 import "swiper/css";
@@ -18,7 +18,10 @@ export default function Visited() {
         <div className="flex justify-between flex-col sm:flex-row gap-5 items-center mb-4 ">
           <h2 className="text-2xl md:text-[40px] font-poppins leading-[1.2] text-brand-blue-dark">
             Recently
-            <span className="font-satisfy text-brand-red font-black"> Visited</span>
+            <span className="font-satisfy text-brand-red font-black">
+              {" "}
+              Visited
+            </span>
           </h2>
           <a
             href="#"

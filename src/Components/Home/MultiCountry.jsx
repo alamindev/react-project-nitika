@@ -18,7 +18,10 @@ export default function MultiCountry() {
           <div className="space-y-3">
             <h2 className="text-2xl md:text-[40px] text-center sm:text-left font-poppins leading-[1.2] text-brand-blue-dark">
               Multi-Country
-              <span className="font-satisfy text-brand-red font-black"> Tours</span>
+              <span className="font-satisfy text-brand-red font-black">
+                {" "}
+                Tours
+              </span>
             </h2>
             <p className="text-base md:text-lg text-center sm:text-left text-brand-dark text-opacity-75">
               Explore our multi-country tours. Let yourself be surprised by our
