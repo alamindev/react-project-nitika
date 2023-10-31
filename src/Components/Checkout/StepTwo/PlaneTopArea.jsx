@@ -588,7 +588,7 @@ export default function PlaneTopArea() {
                     </ul>
                     <button
                       onClick={toggleAccordion}
-                      className="w-full flex gap-3 items-center px-4 justify-center pt-4 font-medium text-brand-dark/60 "
+                      className="w-full sm:hidden flex gap-3 items-center px-4 justify-center pt-4 font-medium text-brand-dark/60 "
                       type="button"
                     >
                       <span>Show less</span>
