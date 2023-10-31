@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 
 import Checkout from "./views/Checkout";
 import Home from "./views/Home";
@@ -10,14 +10,14 @@ import Inactivity from "./views/inactivity";
 function App() {
   return (
     <>
-    <Routes>
+    <HashRouter>
         <Route path="/" element={<Home />} />
         <Route path="/listing" element={<Listing />} />
         <Route path="/listing/details" element={<ListingDetails />} />
         <Route path="/listing/loading" element={<Loading />} />
         <Route path="/listing/inactivity" element={<Inactivity />} />
         <Route path="/checkout" element={<Checkout />} />
-      </Routes>
+      </HashRouter>
     </>
   );
 }
