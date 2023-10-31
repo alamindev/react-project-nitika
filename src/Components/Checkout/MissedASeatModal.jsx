@@ -37,14 +37,14 @@ export default function MissedASeatModal({ modal, closeModal, handlePopup }) {
                 <button
                   onClick={closeModal}
                   type="button"
-                  className="rounded-full px-8 py-3.5 hover:bg-opacity-90 transition-all bg-brand-blue-50 text-lg font-medium text-brand-blue-600"
+                  className="rounded-full px-8 py-2.5 md:py-3.5 hover:bg-opacity-90 transition-all bg-brand-blue-50 text-lg font-medium text-brand-blue-600"
                 >
                   Back
                 </button>
                 <button
                   onClick={closeModal}
                   type="button"
-                  className="rounded-full px-8 py-3.5 hover:bg-opacity-90 transition-all text-white bg-brand-blue-500  text-lg font-medium"
+                  className="rounded-full px-8 py-2.5 md:py-3.5 hover:bg-opacity-90 transition-all text-white bg-brand-blue-500  text-lg font-medium"
                 >
                   Yes
                 </button>

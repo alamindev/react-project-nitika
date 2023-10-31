@@ -248,7 +248,7 @@ export default function SelectYourSeats() {
             </div>
           </div>
         </div>
-        <div className="relative bg-brand-blue-10 -mx-4 xl:-mx-6   h-[2000px] sm:min-h-[2350px] overflow-hidden">
+        <div className="relative bg-brand-blue-10 -mx-4 xl:-mx-6   h-[2000px] sm:min-h-[2350px] sm:overflow-y-clip">
           <figure className="absolute w-full left-0 top-0 right-0  ">
             <img
               className="w-full sm:block hidden h-[2000px] sm:h-[2500px] object-cover object-top "

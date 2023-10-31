@@ -2011,7 +2011,7 @@ export default function PlaneSeat() {
             </svg>
           </div>
         </div>
-        <div className="px-8">
+        <div className="px-4 sm:px-8">
           <div className="w-full py-3.5 flex justify-center items-center rounded rounded-b-[40px] bg-brand-blue-40">
             <svg
               xmlns="http://www.w3.org/2000/svg"

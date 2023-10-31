@@ -34,7 +34,7 @@ export default function DidnotSelectASeatModal({ modal, closeModal }) {
               <ul className="grid gap-1.5">
                 <li className="flex gap-2.5 items-start">
                   <svg
-                    className="mt-0.5"
+                    className="mt-0.5 shrink-0"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -59,7 +59,7 @@ export default function DidnotSelectASeatModal({ modal, closeModal }) {
                 </li>
                 <li className="flex gap-2.5 items-start">
                   <svg
-                    className="mt-0.5"
+                    className="mt-0.5  shrink-0"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -83,7 +83,7 @@ export default function DidnotSelectASeatModal({ modal, closeModal }) {
                   </p>
                 </li>
               </ul>
-              <div className="flex justify-center gap-4 sm:justify-start ">
+              <div className="flex justify-center gap-4 flex-col md:flex-row sm:justify-start ">
                 <button
                   onClick={closeModal}
                   type="button"

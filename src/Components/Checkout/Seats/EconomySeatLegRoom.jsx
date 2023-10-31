@@ -32,15 +32,18 @@ export default function EconomySeatLegRoom({
   }
 
   const [clickable, setClickable] = useState(is_selected);
+  const [clickMobile, setClickMobile] = useState(false);
 
   const ShowSeatNumber = () => {
     if (status === "selected" || status === "available") {
       setClickable(true);
+      setClickMobile(true);
     }
   };
 
   const HideSeatNumber = () => {
     setClickable(false);
+    setClickMobile(false);
   };
 
   const StarElement = () => {
@@ -130,7 +133,7 @@ export default function EconomySeatLegRoom({
     <div
       className={`relative flex leading-none group/seat  w-[27px] sm:w-[35px] h-[24px] sm:h-[31px] ${
         clickable && "active-seat"
-      }`}
+      } ${clickMobile && "active"}`}
     >
       <button
         type="button"

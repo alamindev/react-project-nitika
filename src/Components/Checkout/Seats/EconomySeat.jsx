@@ -32,15 +32,18 @@ export default function EconomySeat({
   }
 
   const [clickable, setClickable] = useState(is_selected);
+  const [clickMobile, setClickMobile] = useState(false);
 
   const ShowSeatNumber = () => {
     if (status === "selected" || status === "available") {
       setClickable(true);
+      setClickMobile(true);
     }
   };
 
   const HideSeatNumber = () => {
     setClickable(false);
+    setClickMobile(false);
   };
 
   const StarElement = () => {
@@ -104,7 +107,9 @@ export default function EconomySeat({
             ></path>
           </svg>
           <div
-            className={`w-[14px] h-[14px] absolute right-0 top-3 flex justify-center items-center rounded-md bg-brand-red-300 sm:hidden`}
+            className={`${
+              is_red ? "bg-brand-red-300" : " bg-brand-blue-400"
+            } w-[14px] h-[14px] absolute right-0 top-3 flex justify-center items-center rounded-md  sm:hidden`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +133,8 @@ export default function EconomySeat({
     <div
       className={`relative flex leading-none group/seat w-[27px] sm:w-[35px] h-[24px] sm:h-[31px] ${
         clickable && "active-seat"
-      }`}
+      }     
+       ${clickMobile && "active"}`}
     >
       <button
         type="button"
