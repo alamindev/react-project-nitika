@@ -586,6 +586,28 @@ export default function PlaneTopArea() {
                         </p>
                       </li>
                     </ul>
+                    <button
+                      onClick={toggleAccordion}
+                      className="w-full flex gap-3 items-center px-4 justify-center pt-4 font-medium text-brand-dark/60 "
+                      type="button"
+                    >
+                      <span>Show less</span>
+                      <svg
+                        className={`transition-all shrink-0 stroke-brand-dark/60 rotate-180 `}
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="7"
+                        fill="none"
+                        viewBox="0 0 11 7"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
+                          d="M1 1l4.5 4.5L10 1"
+                        ></path>
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
