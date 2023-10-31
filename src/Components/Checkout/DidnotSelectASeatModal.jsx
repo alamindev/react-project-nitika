@@ -10,7 +10,7 @@ export default function DidnotSelectASeatModal({ modal, closeModal }) {
     >
       <div className="h-screen overflow-y-auto flex  items-center px-4 sm:px-0">
         <div
-          className={`w-[932px] max-w-full mx-auto p-6 sm:p-10  my-10 sm:mt-8 sm:mb-0 bg-white rounded-[24px] relative
+          className={`w-[932px] max-w-full mx-auto p-4 sm:p-10  my-10 sm:mt-8 sm:mb-0 bg-white rounded-[24px] relative
            transition-all duration-300 ${
              modal ? "translate-y-0" : "-translate-y-full"
            }`}
@@ -27,7 +27,7 @@ export default function DidnotSelectASeatModal({ modal, closeModal }) {
               <img src={alert} alt="alert" />
             </figure>
             <div className="space-y-4">
-              <h2 className="text-center sm:text-left text-black font-medium text-2xl">
+              <h2 className="text-center sm:text-left text-black font-medium text-xl sm:text-2xl">
                 Are you sure that you don't want to select seats for your
                 flights?
               </h2>
@@ -87,19 +87,19 @@ export default function DidnotSelectASeatModal({ modal, closeModal }) {
                 <button
                   onClick={closeModal}
                   type="button"
-                  className="rounded-full px-8 py-2.5 hover:bg-opacity-90 transition-all bg-brand-blue-50 text-lg font-medium text-brand-blue-600"
+                  className="rounded-full px-8 py-2.5 hover:bg-opacity-90 transition-all bg-brand-blue-50 text-sm sm:text-lg font-medium text-brand-blue-600"
                 >
                   Skip Seat Selection
                 </button>
                 <button
                   onClick={closeModal}
                   type="button"
-                  className="rounded-full px-8 py-2.5 hover:bg-opacity-90 transition-all text-white bg-brand-blue-500  text-lg font-medium"
+                  className="rounded-full px-8 py-2.5 hover:bg-opacity-90 transition-all text-white bg-brand-blue-500 text-sm sm:text-lg font-medium"
                 >
                   Continue with Seat Selection
                 </button>
               </div>
-              <p className="text-lg text-black/50">
+              <p className="text-sm sm:text-lg text-black/50">
                 (You'll be assigned random seating for free if you skip seat
                 selection.)
               </p>

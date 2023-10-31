@@ -10,7 +10,7 @@ export default function MissedASeatModal({ modal, closeModal, handlePopup }) {
     >
       <div className="h-screen overflow-y-auto flex  items-center px-4 sm:px-0">
         <div
-          className={`w-[732px] max-w-full mx-auto p-6 sm:p-10  my-10 sm:mt-8 sm:mb-0 bg-white rounded-[24px] relative
+          className={`w-[732px] max-w-full mx-auto p-4 sm:p-10  my-10 sm:mt-8 sm:mb-0 bg-white rounded-[24px] relative
            transition-all duration-300 ${
              modal ? "translate-y-0" : "-translate-y-full"
            }`}
@@ -27,13 +27,13 @@ export default function MissedASeatModal({ modal, closeModal, handlePopup }) {
               <img src={alert} alt="alert" />
             </figure>
             <div className="space-y-4">
-              <h2 className="text-center sm:text-left text-black font-medium text-2xl">
+              <h2 className="text-center sm:text-left text-black font-medium text-xl sm:text-2xl">
                 You didn't pick a seat for 1 passengers
               </h2>
               <p className="text-base sm:text-lg text-center sm:text-left text-black">
                 Do you want to keep your current selection and continue anyway?
               </p>
-              <div className="flex justify-center gap-4 sm:justify-start ">
+              <div className="flex justify-center gap-3 sm:gap-4 sm:justify-start ">
                 <button
                   onClick={closeModal}
                   type="button"

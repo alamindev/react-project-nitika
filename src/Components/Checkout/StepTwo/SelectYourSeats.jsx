@@ -26,7 +26,7 @@ export default function SelectYourSeats() {
   };
   return (
     <>
-      <div className=" bg-white lg:rounded-xl px-4 py-6 xl:p-6 w-full space-y-6">
+      <div className=" bg-white lg:rounded-xl px-4 py-6 xl:p-6 w-full space-y-6 overflow-y-clip">
         <div className="flex gap-4 items-start">
           <figure className="shrink-0">
             <img src={OfficeChair} alt="office chair" />
@@ -248,7 +248,7 @@ export default function SelectYourSeats() {
             </div>
           </div>
         </div>
-        <div className="relative bg-brand-blue-10 -mx-4 xl:-mx-6   h-[2000px] sm:min-h-[2350px] sm:overflow-y-clip">
+        <div className="relative bg-brand-blue-10 -mx-4 xl:-mx-6 h-[2000px] sm:min-h-[2350px]">
           <figure className="absolute w-full left-0 top-0 right-0  ">
             <img
               className="w-full sm:block hidden h-[2000px] sm:h-[2500px] object-cover object-top "
@@ -270,10 +270,10 @@ export default function SelectYourSeats() {
             </div>
           </div>
         </div>
-        <div className="flex gap-4 justify-between items-center ">
+        <div className="flex gap-3 justify-between items-center relative z-30">
           <button
             type="button"
-            className="flex max-w-[200px] sm:max-w-full w-full sm:w-auto justify-center gap-2 sm:gap-4 items-center rounded-full px-5 sm:px-8 py-3 sm:py-3.5 hover:bg-opacity-90 transition-all bg-brand-blue-50 text-base sm:text-lg font-medium text-brand-blue-600"
+            className="flex max-w-[200px] sm:max-w-full w-full sm:w-auto justify-center gap-2 sm:gap-4 items-center rounded-full px-4 sm:px-8 py-3 sm:py-3.5 hover:bg-opacity-90 transition-all bg-brand-blue-50 text-base sm:text-lg font-medium text-brand-blue-600"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

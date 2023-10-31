@@ -5,7 +5,7 @@ import arrowLeft from "../../../assets/images/checkout/arrow-left.png";
 export default function HoverElementBusiness({ hidePopUp }) {
   return (
     <>
-      <div className="sm:absolute sm:w-[335px] sm:top-12 lg:-top-4  sm:opacity-0 sm:invisible max-lg:group-[.active]/seat:opacity-100 max-lg:group-[.active]/seat:visible lg:group-hover/seat:opacity-100 lg:group-hover/seat:visible sm:-left-[170px] lg:left-full sm:ml-4 fixed w-full max-sm:top-full max-sm:group-[.active]/seat:top-0  transition-all duration-300  max-sm:inset-x-0 max-sm:bg-white max-sm:z-[999] max-sm:mt-28 z-40 rounded-t-2xl  max-sm:min-h-[calc(100vh-115px)] max-sm:max-h-[calc(100vh-115px)] max-sm:overflow-y-auto">
+      <div className="sm:absolute sm:w-[335px] sm:top-12 lg:-top-4 sm:opacity-0 sm:invisible max-lg:group-[.active]/seat:opacity-100 max-lg:group-[.active]/seat:visible lg:group-hover/seat:opacity-100 lg:group-hover/seat:visible sm:-left-[170px] lg:left-full sm:ml-4 fixed w-full max-sm:-bottom-full max-sm:group-[.active]/seat:bottom-0  transition-all duration-300  max-sm:inset-x-0 max-sm:bg-white max-sm:z-[999] max-sm:mt-28 z-40 rounded-t-2xl max-sm:max-h-[calc(100vh-115px)] max-sm:overflow-y-auto">
         <figure className="absolute sm:block hidden left-1/2 -top-5 lg:-left-5 max-lg:-translate-x-1/2 lg:top-4 max-lg:rotate-90">
           <img src={arrowLeft} alt="arrow-left" />
         </figure>

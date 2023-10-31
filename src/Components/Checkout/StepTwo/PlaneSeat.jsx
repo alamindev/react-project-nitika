@@ -32,7 +32,7 @@ export default function PlaneSeat() {
               ></path>
             </svg>
           </div>
-          <div className="rounded bg-brand-blue-40 w-[130px] py-2.5">
+          <div className="rounded bg-brand-blue-40 w-full sm:w-[130px] py-2.5">
             <p className="text-base text-center leading-none font-medium text-brand-blue-600">
               Bulk Head
             </p>
@@ -1764,7 +1764,7 @@ export default function PlaneSeat() {
                   </div>
                 </div>
                 <div className="grid grid-cols-1 pt-2">
-                  <div className="rounded bg-brand-blue-40 w-[130px] py-2.5">
+                  <div className="rounded bg-brand-blue-40 w-full sm:w-[130px] py-2.5">
                     <p className="text-base text-center leading-none font-medium text-brand-blue-600">
                       Bulk Head
                     </p>
