@@ -10,7 +10,7 @@ import Inactivity from "./views/inactivity";
 function App() {
   return (
     <>
-      <Routes>
+    <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/listing" element={<Listing />} />
         <Route path="/listing/details" element={<ListingDetails />} />
